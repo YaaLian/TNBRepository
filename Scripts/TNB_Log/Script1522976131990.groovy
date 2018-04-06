@@ -18,4 +18,27 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
+
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('http://223.27.128.248:2503/TNB/Login.aspx')
+
+WebUI.setText(findTestObject('Page_Tenaga Nasional Berhad/input_ucloginUserName'), 'tnb')
+
+WebUI.setText(findTestObject('Page_Tenaga Nasional Berhad/input_ucloginPassword'), '!Qazzse4')
+
+WebUI.click(findTestObject('Page_Tenaga Nasional Berhad/input_Log In'))
+
+WebUI.click(findTestObject('Page_Tenaga Nasional Berhad/div_'))
+
+WebUI.setText(findTestObject('Page_Tenaga Nasional Berhad/input_ucloginUserName'), 'superadmin')
+
+WebUI.setText(findTestObject('Page_Tenaga Nasional Berhad/input_ucloginPassword'), '!Qazzse4')
+
+WebUI.click(findTestObject('Page_Tenaga Nasional Berhad/input_Log In'))
+
+WebUI.click(findTestObject('Page_Tenaga Nasional Berhad/a_SMR Log'))
+
+WebUI.closeBrowser()
 
