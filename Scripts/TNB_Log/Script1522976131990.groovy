@@ -22,23 +22,15 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('http://223.27.128.248:2503/TNB/Login.aspx')
+WebUI.navigateToUrl('Login.aspx')
 
 WebUI.setText(findTestObject('Page_Tenaga Nasional Berhad/input_ucloginUserName'), 'yes99')
 
-WebUI.setText(findTestObject('Page_Tenaga Nasional Berhad/input_ucloginPassword'), '!Qazzse4')
+WebUI.setText(findTestObject('Page_Tenaga Nasional Berhad/input_ucloginPassword'), '22222222222')
 
 WebUI.click(findTestObject('Page_Tenaga Nasional Berhad/input_Log In'))
 
 WebUI.click(findTestObject('Page_Tenaga Nasional Berhad/div_'))
-
-WebUI.setText(findTestObject('Page_Tenaga Nasional Berhad/input_ucloginUserName'), 'superadmin')
-
-WebUI.setText(findTestObject('Page_Tenaga Nasional Berhad/input_ucloginPassword'), '!Qazzse4')
-
-WebUI.click(findTestObject('Page_Tenaga Nasional Berhad/input_Log In'))
-
-WebUI.click(findTestObject('Page_Tenaga Nasional Berhad/a_SMR Log'))
 
 WebUI.closeBrowser()
 
